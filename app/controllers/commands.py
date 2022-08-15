@@ -1,7 +1,10 @@
-
+from playsound  import *
 
 
 class CommandsMusic:
 
     def tocar():
-        pass
+
+        playsound('/path/to/a/sound/file/you/want/to/play.mp3')
+
+
