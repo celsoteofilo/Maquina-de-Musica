@@ -37,8 +37,17 @@ myList = os.listdir('app/music/')
 
 myListBox = Listbox(frame)
 
+def clickEvent(e):
+    w = e.widget
+    index = int(w.curselection()[0])
+    value = w.get(index)
+    commandos.play(value)
+    pass
+
 for file in myList:
     myListBox.insert(END, file)
+
+myListBox.bind('<<ListboxSelect>>', clickEvent)
 
 
 myListBox.grid(  padx = 3, pady = 3  )
