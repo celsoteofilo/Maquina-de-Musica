@@ -10,6 +10,7 @@ janela.geometry('500x300')
 botao = Button(janela, text= 'PLAY')
 botao.grid(column= 30, row=40)
 
+
 botao = Button(janela, text= 'STOP')
 botao.grid(column= 30, row=80)
 
@@ -25,7 +26,7 @@ botao.grid(column= 30, row=90)
 
 
 
-Texto_play = Label(janela, text= 'PARA TOCAR: ' )
+Texto_play = Label(janela, text= 'PARA TOCAR: ')
 Texto_play.grid(column=30, row=0)
 Texto_play.grid(padx= 30,pady=0)
 
