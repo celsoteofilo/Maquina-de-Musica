@@ -1,10 +1,13 @@
 from tkinter import *
+import os
 from app.controllers.commands import CommandsMusic
 commandos = CommandsMusic()
 
 janela = Tk()
 janela.title ('VIdeo Music ')
 janela.geometry('500x300')
+
+frame = Frame( janela )
 
 
 botao = Button(janela, text= 'ESCOLHER')
@@ -30,7 +33,16 @@ Texto_play = Label(janela, text= 'PARA TOCAR: ')
 Texto_play.grid(column=2, row=0)
 Texto_play.grid(padx=2,pady=0)
 
+myList = os.listdir('app/music/')
 
+myListBox = Listbox(frame)
+
+for file in myList:
+    myListBox.insert(END, file)
+
+
+myListBox.grid(  padx = 30, pady = 30  )
+frame.grid( padx = 30, pady = 30 )
 
 janela.mainloop()
 
