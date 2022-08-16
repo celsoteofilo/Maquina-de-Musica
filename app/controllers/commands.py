@@ -3,7 +3,7 @@ from playsound  import *
 
 class CommandsMusic:
 
-    def tocar():
+    def tocar(p):
         playsound('Music/Top Gear.mp3')
 
 

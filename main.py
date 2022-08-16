@@ -7,30 +7,31 @@ janela.title ('VIdeo Music ')
 janela.geometry('500x300')
 
 
-botao = Button(janela, text= 'PLAY')
-botao.grid(column= 30, row=40)
+botao = Button(janela, text= 'ESCOLHER')
+botao.grid(column= 0, row=10)
 
 
-botao = Button(janela, text= 'STOP')
-botao.grid(column= 30, row=80)
+botao = Button(janela, text= 'CORRIGIR')
+botao.grid(column= 1, row=10)
 
 
-botao = Button(janela, text= 'NEXT')
-botao.grid(column= 40, row=50)
+botao = Button(janela, text= 'TOCAR ')
+botao.grid(column= 2, row=10)
 
-botao = Button(janela, text= ' COME BACK')
-botao.grid(column= 10, row=50)
+botao = Button(janela, text= ' TELA')
+botao.grid(column= 3, row=10)
 
 botao = Button(janela, text= 'SAIR')
-botao.grid(column= 30, row=90)
+botao.grid(column=2, row=20)
 
 
 
 Texto_play = Label(janela, text= 'PARA TOCAR: ')
-Texto_play.grid(column=30, row=0)
-Texto_play.grid(padx= 30,pady=0)
+Texto_play.grid(column=2, row=0)
+Texto_play.grid(padx=2,pady=0)
 
 
 
 janela.mainloop()
+
 
