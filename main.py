@@ -5,7 +5,7 @@ commandos = CommandsMusic()
 
 janela = Tk()
 janela.title ('VIdeo Music ')
-janela.geometry('500x300')
+janela.geometry('600x300')
 
 frame = Frame( janela )
 
@@ -18,7 +18,7 @@ botao = Button(janela, text= 'CORRIGIR')
 botao.grid(column= 1, row=10)
 
 
-botao = Button(janela, text= 'TOCAR ')
+botao = Button(janela, text= 'TOCAR ', command= )
 botao.grid(column= 2, row=10)
 
 botao = Button(janela, text= ' TELA')
@@ -41,8 +41,8 @@ for file in myList:
     myListBox.insert(END, file)
 
 
-myListBox.grid(  padx = 30, pady = 30  )
-frame.grid( padx = 30, pady = 30 )
+myListBox.grid(  padx = 3, pady = 3  )
+frame.grid( padx = 3, pady = 3)
 
 janela.mainloop()
 
